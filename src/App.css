@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a252f;
+}
+
+/* Formulário */
+.form-aluno {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  border: 1px solid #e2e8f0;
+}
+
+.form-aluno h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.input-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.input-group input,
+.input-group select,
+.busca-item input,
+.busca-item select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.input-group-inline {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.input-group-inline > div {
+  flex: 1;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.btn-salvar {
+  background-color: #e184d3;
+  color: #fff;
+  flex: 1;
+}
+
+.btn-salvar:hover {
+  background-color: #faaff9;
+}
+
+.btn-cancelar {
+  background-color: #7f8c8d;
+  color: #fff;
+}
+
+.btn-cancelar:hover {
+  background-color: #6c757d;
+}
+
+/* Painel de busca */
+.painel-busca {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.busca-item {
+  flex: 1;
+}
+
+.contador {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Tabela Responsiva */
+.tabela-container {
+  overflow-x: auto;
+}
+
+.tabela-alunos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  min-width: 700px;
+}
+
+.tabela-alunos th,
+.tabela-alunos td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+
+.tabela-alunos th {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+/* Status */
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.status.aprovado {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.reprovado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Ações na tabela */
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-editar {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
+.btn-editar:hover {
+  background-color: #d68910;
+}
+
+.btn-excluir {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
+.btn-excluir:hover {
+  background-color: #c0392b;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 600px) {
+  .painel-busca {
+    flex-direction: column;
+  }
+
+  .input-group-inline {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
